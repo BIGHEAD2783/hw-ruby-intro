@@ -4,7 +4,7 @@
 
 def sum arr
   sum = 0
-  arr.each { |x| sum += x}
+  arr.each { |x| sum += x }
   return sum
 end
 
@@ -44,14 +44,14 @@ end
 # Part 2
 
 def hello(name)
-    hello = "Hello, " name
+    hello = "Hello, " + name
     return hello
 end
 
 def starts_with_consonant? s
     cons = "bcdfghjklmnpqrstvwxyz"
     starts_with_consonant? = false
-    cons.split("").each { |x| chk = chk || (x == s[0,1].downcase)}
+    cons.split("").each { |x| chk = chk || (x === s[0,1].downcase) }
     return starts_with_consonant?
 end
 
